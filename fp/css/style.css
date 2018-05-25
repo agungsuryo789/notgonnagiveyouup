@@ -1,5 +1,20 @@
+.title{
+    text-align: center;
+    margin-top: 500px;
+    background: white;
+}
+.title2
+{
+    text-align: center;
+    background: white;
+}
+.title3
+{
+    text-align: center;
+    background: white;
+}
 body{
-	background-image: url('../img/cumi.gif');
-	background-size: cover;
-	background-attachment: fixed;
+    background-image: url(../img/cumi.gif);
+    background-size: cover;
+    background-attachment: fixed;
 }
