@@ -1,25 +1,17 @@
-.title{
+.maindish{
     text-align: center;
-    margin-top: 500px;
+    margin-top: 0px;
     background: white;
 }
-.title2
+.dessert
 {
     text-align: center;
     background: white;
 }
-.title3
+.beverages
 {
     text-align: center;
     background: white;
-}
-.content{
-    background: white;
-}
-body{
-    background-image: url(../img/img1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .overlay {
@@ -62,6 +54,80 @@ body{
     right: 45px;
     font-size: 60px;
 }
+
+.parallax { 
+    /* The image used */
+    background-image: url("../img/icecream.jpg");
+
+    /* Set a specific height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 { 
+    /* The image used */
+    background-image: url("../img/seafood.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 { 
+    /* The image used */
+    background-image: url("../img/dessert.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 { 
+    /* The image used */
+    background-image: url("../img/drink.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
