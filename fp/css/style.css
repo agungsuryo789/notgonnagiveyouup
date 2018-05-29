@@ -1,48 +1,25 @@
 
-.parallax { 
-    /* The image used */
-    background-image: url("../img/icecream.jpg");
-
-    /* Set a specific height */
-    height: 600px; 
-
-    /* Create the parallax scrolling effect */
+.headerimg1 { 
+    background-image: url("../img/bakery7.jpg");
+    height: 700px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
-.title1 h1{
-    text-align: center;
+.texttitle{
+    padding-top: 150px;
+    padding-left: 430px;
+    color: grey;
 }
-.content1{
-    background-color: transparent;
-    background-clip: padding-box;
-    
-}
-.parallax1{
-    background-image: url("../img/backgr.jpg");
-     height: 800px; 
-     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.title2 h2{
-    text-align: center;
-}
-.title3 h3{
-    text-align: left;
-    text-decoration-style: solid;
-    font-language-override: normal;
-}
+.textscroll{
+    padding-top: 250px;
+    padding-left: 540px;
+    color: grey;
 
-.content2{
-    height: 350px;
 }
-.navbar-logo {
-  width: 0px;
+.textscroll i{
+    padding-left: 140px;
 }
 
 
