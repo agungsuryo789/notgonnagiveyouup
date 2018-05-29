@@ -3,21 +3,28 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
+.welcome{
+    text-align: center;
+}
 .spy1{
-    top: 100px;
-    padding: 250px;    
+    top: 700px;
+    padding: 150px;
+    background:white;    
 }
 .spy2{
-    top: 150px;  
-    padding: 250px; 
+    top: 750px;  
+    padding: 150px; 
+    background:white;    
+
 }
 .spy3{
-    top: 200px; 
-    padding: 250px;   
+    top: 800px; 
+    padding: 150px;   
+    background:white;    
 }
 .spy4{
-    top: 250px;   
-    padding: 250px; 
+    top: 850px;   
+    padding: 150px; 
+    background:white;    
 }
 
