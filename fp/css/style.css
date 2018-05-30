@@ -7,15 +7,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.texttitle{
-    padding-top: 150px;
-    padding-left: 430px;
-    color: grey;
+.texttitle h3{
+    padding-top: 110px;
+    color: orange;
+   font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 100px;
+    font-weight: bold; 
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center; 
 }
-.textscroll{
-    padding-top: 250px;
+.textscroll h5{
+    padding-top: 275px;
     padding-left: 540px;
-    color: grey;
+    color: darkorange;
+   font-family:  'Helvetica Neue', sans-serif;
+    font-weight: bold; 
 
 }
 .textscroll i{
