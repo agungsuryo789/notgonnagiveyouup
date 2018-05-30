@@ -1,6 +1,6 @@
 
 .headerimg1 { 
-    background-image: url("../img/bakery7.jpg");
+    background-image: url("../img/bakery1.jpg");
     height: 700px; 
     background-attachment: fixed;
     background-position: center;
@@ -21,9 +21,52 @@
 .textscroll i{
     padding-left: 140px;
 }
+/*.navv a{
+    color: black;
+}
+.navbar-brand{
+    color:black;
+}
+*/
+.contentparent1{
+    text-align: center;
+}
+.navbarr{
+    background-color: rgba(59, 52, 52, 0.58);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+    transition: .5s;
+}
+.navbarr.scrollUp {
+  transform: translateY(-80px);
+}
+.navbarr ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+} 
+.navbarr li {
+    float: left;
+}
 
+.navbarr li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-
+/* Change the link color to #111 (black) on hover */
+.navbarr li a:hover {
+    font-size: 25px;
+    transition: .5s , transform .5s;
+    transform: rotate(360deg);
+}
 
 
 
