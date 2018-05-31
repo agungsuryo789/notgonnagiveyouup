@@ -28,6 +28,13 @@
     padding-top: 275px;
     padding-left: 540px;
 }
+.col-12 concept p{
+    text-align: justify;
+}
+.col-3 content2 p{
+    text-align: justify;
+    font-size: 100px;
+}
 .textscroll h5{
     color: darkorange;
     font-family:  'Helvetica Neue', sans-serif;
