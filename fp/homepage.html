@@ -12,19 +12,14 @@
 </head>
 
 <body>
+
+<!-- Header image -->
 <div class="slide ">
-  <!-- <img class="mySlides animated zoomIn" src="img/bakery2.jpg">
-  <img class="mySlides animated zoomIn" src="img/bakery8.jpg">
-  <img class="mySlides animated zoomIn" src="img/bakery1.jpg">
-  <img class="mySlides animated zoomIn" src="img/bakery4.jpg"> -->
   <img id="slider" src="img/bakery8.jpg">
 </div>
-<!-- Header image -->
-<!-- <div class="headerimg1">
-  <div class="texttitle">
-    <h3>Peaceful Bakery and Cafe</h3>
-  </div>
-</div> -->
+<div class="texttitle">
+  <h3>Peaceful Bakery and Cafe</h3>
+</div>
 <!--  -->
 
 <!-- navbar -->
@@ -52,7 +47,7 @@
 <!--  -->
 
 <!-- Contentt -->
-  <div class="row ">
+  <div class="row contentparent">
     <div class="content1">
       <img src="img/bakery5.jpg" width="950" height="600" data-aos="zoom-in" data-aos-duration="2000">
     </div>
@@ -70,23 +65,53 @@
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 <!--  -->
-
-
+<div class="row">
+  <div class="col-12">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="col-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="col-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="col-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
 
 
 <!-- script -->
@@ -125,24 +150,11 @@
         AOS.init();
   </script>
   <script>
-    // var myIndex = 0;
-    // carousel();
-
-    // function carousel() {
-    //     var i;
-    //     var x = document.getElementsByClassName("mySlides");
-    //     for (i = 0; i < x.length; i++) {
-    //        x[i].style.display = "none";  
-    //     }
-    //     myIndex++;
-    //     if (myIndex > x.length) {myIndex = 1}    
-    //     x[myIndex-1].style.display = "block";  
-    //     setTimeout(carousel, 4000); // Change image every 2 seconds
-    // } 
     var imgArray = [
     'img/bakery8.jpg',
-    'img/bakery8.jpg',
-    'img/bakery8.jpg'],
+    'img/bakery2.jpg',
+    'img/bakery7.jpg',
+    'img/bakery6.jpg'],
     curIndex = 0;
     imgDuration = 5000;
 
