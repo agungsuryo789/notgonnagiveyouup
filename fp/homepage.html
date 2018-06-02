@@ -2,12 +2,12 @@
 <html>
 
 <head>
+<title>Mama Bakery n Cafe</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/jquery.waypointsjs"></script>
@@ -22,6 +22,7 @@
 </div>
 <div class="texttitle">
   <h3>Mama Bakery and Cafe</h3>
+  <h4>Yogyakarta</h4>
 </div>
 <!--  -->
 
@@ -67,22 +68,27 @@
   </div>
   <!--  -->
 
-  <div class="col-sm-12 menu" data-aos="zoom-out" data-aos-duration="2000">
+  <div class="col-sm-12 menu" data-aos="zoom-out" data-aos-duration="1500">
     <h3>Menu List</h3>
     <img src="img/line4.png" class="img-fluid" alt="Responsive image">
   </div>
 
+  <div class="menu2">
+  <div class="containerr c1" data-aos="fade-down">
+  <img src="img/bakery5.jpg" alt="Avatar" class="image" style="height: 500px;">
+  <div class="overlay">
+    <div class="text"><a href="#">Bread</a></div>
+  </div>
+  </div>
+  <div class="containerr c2" data-aos="fade-down">
+  <img src="img/dessert.jpg" alt="Avatar" class="image" style="height: 500px;">
+  <div class="overlay">
+    <div class="text"><a href="#">Drink</a></div>
+  </div>
+  </div>
+  </div>
 
-  <!-- <span class="menu2">
-    <ul>
-      <li><a href="">Wheat bread</a></li>
-      <li><a href="">Cornbread</a></li>
-      <li><a href="">Yeast bread</a></li>
-      <li><a href="">Sweet</a></li>
-    </ul>
-  </span> -->
-
-
+<div id="map" style="width:100%;height:800px;background:white"></div>
 <!-- <div class="content"></div>
 <footer id="myFooter">
         <div class="container">
@@ -162,8 +168,8 @@
     var imgArray = [
     'img/bakery8.jpg',
     'img/bakery9.jpg',
-    'img/bakery10.jpg',
-    'img/bakery3.jpg'],
+    'img/bakery2.jpg',
+    'img/bakery1.jpg'],
     curIndex = 0;
     imgDuration = 5000;
 
@@ -181,5 +187,16 @@
   </script>
 <!--  -->
 <!--scrip-->
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz_vrcfeEjILKILyLhJ8ipbDwbxsz5Kx4&callback=myMap" type="text/javascript"></script>
 </body>
 </html>
