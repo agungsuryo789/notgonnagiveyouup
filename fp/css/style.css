@@ -236,7 +236,7 @@ ul a:hover{
     width: 100%;
 }
 
-.imgmenu:hover{
+.menuimg a:hover{
     transition: .2s , transform .5s;
     transform: scale(1,1);
 }
