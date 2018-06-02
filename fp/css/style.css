@@ -1,9 +1,12 @@
-body{
-    overflow-x: hidden;
-}
-ul{
-    list-style-type: none;
-}
+/*
+.headerimg1 { 
+    background-image: url("../img/bakery8.jpg");
+    height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 .texttitle {
     position: absolute;
     top: 50%;
@@ -13,41 +16,29 @@ ul{
 }
 .texttitle h3{
     color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 60px;
+   font-family: "Libre Baskerville", serif;
+    font-style:;
+    font-size: 80px;
+    font-weight: ; 
     letter-spacing: -1px;
     line-height: 1;
     text-align: center; 
 }
-.texttitle h4{
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 20px;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center; 
+.textscroll {
+    padding-top: 275px;
+    padding-left: 540px;
 }
-.content2 h3{
-    font-family: "Libre Baskerville", serif;
-    font-size: 50px;
-    text-align: center;
-}
-.content2 p{
-    padding-top: 50px;
-    text-align: center;
-    font-family: "Libre Baskerville", serif;    
-    font-size: 15px;
-}
-.content2 img{
-    width: 300px;
-    margin-top: -20px;
+.textscroll h5{
+    color: darkorange;
+    font-family:  'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+
 }
 .textscroll i{
     padding-left: 140px;
 }
 .navbarr{
-    background-color: rgb(24, 25, 25);
-    opacity: 0.5;
+    background-color: rgba(0,0,0,0);
     position: fixed;
     top: 0;
     width: 100%;
@@ -94,13 +85,12 @@ ul{
     opacity:0.4;
 }
 
-/*
+
 .content{
    flex: 1 0 auto;
    -webkit-flex: 1 0 auto;
    min-height: 200px;
 }
-
 
 #myFooter{
    flex: 0 0 auto;
@@ -205,75 +195,9 @@ ul{
     margin-top: 10px;
     line-height: 25px;
 }
-*/
-.menu{
-    width: 100%;
-    height: 200px;
-    background-color: #bf8f65;
 
-}
-.menu h3{
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-size: 50px;
-    color: white;
-    padding-top: 40px;
-}
-.menu img{
-    margin-top: -50px;
-    margin-left: 450px;
-}
-ul a:hover{
-    text-decoration: none;
-    color: black;
-}
-.col-sm-12 h3{
-    text-align: center;
-}
-.containerr {
-  position: relative;
-  width: 50%;
-  float: left;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #a89f8f;
-  opacity: 0.5;
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
-
-.containerr:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text a{
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Clearfix (clear floats) */
-.menu2::after {
-    content: "";
-    clear: both;
-    display: table;
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
 }
