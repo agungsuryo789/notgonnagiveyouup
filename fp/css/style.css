@@ -16,6 +16,7 @@
 }
 .texttitle h3{
     color: white;
+<<<<<<< HEAD
    font-family: "Libre Baskerville", serif;
     font-style:;
     font-size: 80px;
@@ -27,6 +28,13 @@
 .textscroll {
     padding-top: 275px;
     padding-left: 540px;
+=======
+    font-family: "Libre Baskerville", serif;
+    font-size: 80px;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center; 
+>>>>>>> parent of a8ab903... GMAP erorrrrrrrrrrrrrrrrrrrrrrrrrrr
 }
 .textscroll h5{
     color: darkorange;
@@ -195,9 +203,42 @@
     margin-top: 10px;
     line-height: 25px;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 767px) {
     #myFooter {
         text-align: center;
     }
+=======
+*/
+.menu{
+    width: 100%;
+    height: 200px;
+    background-color: #bf8f65;
+
+}
+.menu h3{
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 50px;
+    color: white;
+    padding-top: 40px;
+}
+.menu img{
+    margin-top: -50px;
+    margin-left: 450px;
+}
+.menu2 ul a{
+    float:left;
+    margin:30px;
+    font-size: 30px;
+    color: grey;
+}
+ul a:hover{
+    text-decoration: none;
+    color: black;
+}
+.col-sm-12 h3{
+    text-align: center;
+>>>>>>> parent of a8ab903... GMAP erorrrrrrrrrrrrrrrrrrrrrrrrrrr
 }
