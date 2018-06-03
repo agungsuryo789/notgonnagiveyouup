@@ -2,143 +2,96 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="css/mayang.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/mayang.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.waypointsjs"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
+    // transition
+    $(document).ready(function () {
+  
+      'use strict';
+      
+       var c, currentScrollTop = 0,
+           navbar = $('.navbarr');
 
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+         
+          currentScrollTop = a;
+         
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+      });
+    //
+    
+  </script>
+  <script type="text/javascript">
+        AOS.init();
   </script>
 </head>
 
 <body>
-<div class="header">
-  <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  </div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-</div>
-
 <div class="parallax"></div>
-
-<div class="title1"><h1>TEAM</h1></div>
-
-<div class="container content1">
+<div class="hero"></div>
   <div class="row">
-    <div class="col-3">
-      <img src="img/user.png" class="img-thumbnail">
-      <p>AGUNG S S</p>
-      <a class="waves-effect waves-teal btn-flat">Button</a>    </div>
-    <div class="col-3">
-      <img src="img/user.png" class="img-thumbnail">
-      <p>MELATI SUCI</p>
-      <a class="waves-effect waves-teal btn-flat">Button</a>
-    </div>
-    <div class="col-3">
-      <img src="img/user.png" class="img-thumbnail">
-      <p>MAYANG YUDHIASTARI</p>
-      <a class="waves-effect waves-teal btn-flat">Button</a>
-    </div>
-    <div class="col-3">
-      <img src="img/USER.PNg" class="img-thumbnail">
-      <p>MARIA YONESSA P</p>
-      <a class="waves-effect waves-teal btn-flat">Button</a>
+    <div class="col-12">
+      <h1 style="text-align: center;">ABOUT US</h1>
     </div>
   </div>
-</div>
 
-<div class="parallax"></div>
-
-<div class="title1"><h1>MY PROFIL</h1></div>
-<div class="container content2">
-<div class="row">
-  <div class="col-sm-4"><img src="img/USER.PNg" class="img-thumbnail"></div>
-  <div class="col-sm-8">col-sm-8</div>
-</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-</div>
-
-<div class="parallax"></div>
-
-<div class="title1"><h1>MY PROFIL</h1></div>
-<div class="container content3">
-<div class="row">
-  <div class="col-sm-4"><img src="img/USER.PNg" class="img-thumbnail"></div>
-  <div class="col-sm-8">col-sm-8</div>
-</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-</div>
-
-<div class="parallax"></div>
-
-<div class="title1"><h1>MY PROFIL</h1></div>
-<div class="container content4">
-<div class="row">
-  <div class="col-sm-4"><img src="img/USER.PNg" class="img-thumbnail"></div>
-  <div class="col-sm-8">col-sm-8</div>
-</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-</div>
-
-<div class="parallax"></div>
-
-<div class="title1"><h1>MY PROFIL</h1></div>
-<div class="container content5">
   <div class="row">
-  <div class="col-sm-4"><img src="img/USER.PNg" class="img-thumbnail"></div>
-  <div class="col-sm-8">col-sm-8</div>
-</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-  <div class="col-3">col-sm</div>
-</div>
+    <div class="col-12">
+      <h2 style="text-align: center;">What We do Everyday?</h2>
+    </div>
+  </div>
 
-<div class="parallax"></div>
+    <div class="row">
+    <div class="col-12">
+     <h3 style="text-align: center;">"PEACEFULL BAKERY"</h3>
+      <p style="text-align: center;"</p>
+    </div>
+  </div>
 
-<div class="title1"><h1>lalala</h1></div>
+    <div class="row">
+    <div class="col-12">
+      <h4 style="text-align: center;">Our Team</h4>
+    </div>
+ </div>
 
-<div class="container content6">
-  <div class="row">
+    <div class="row">
+    <div class="col-3">
+          <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+      </div>
+
+    <div class="col-3">
+    <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+            
+    </div>
+   
    <div class="col-3">
-      <img src="img/CUMI.GIF" class="img-thumbnail">
-      <a class="waves-effect waves-teal btn-flat">KEPO KLIK</a>
+   <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+           
     </div>
-    <div class="col-3">
-      <img src="img/CUMI.GIF" class="img-thumbnail">
-      <a class="waves-effect waves-teal btn-flat">KEPO KLIK</a>
-    </div>
-    <div class="col-3">
-      <img src="img/CUMI.GIF" class="img-thumbnail">
-      <a class="waves-effect waves-teal btn-flat">KEPO KLIK</a>
-    </div>
-    <div class="col-3">
-      <img src="img/CUMI.GIF" class="img-thumbnail">
-      <a class="waves-effect waves-teal btn-flat">KEPO KLIK</a>
-    </div>
-  </div>
-</div>
 
+   <div class="col-3">
+   <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+          
+    </div>
+</div>
+                          
+
+</div>
 </body>
 </html>

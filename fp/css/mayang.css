@@ -12,28 +12,43 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.title1 h1{
+h1{
     text-align: center;
+     background-color: #deb887;
 }
-.content1{
-    background-color: white;
-}
-.content2{
-    background-color: white;
-}
-.content3{
-    background-color: white;
-}
-.content4{
-    background-color: white;
-}
-.content5{
-    background-color: white;
-}
-.content6{
-    background-color: white;
-)
 
+h2{
+    color: white;
+   font-family: "Calibri", serif;
+    font-style:;
+    font-size: 80px;
+    font-weight: ; 
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center; 
+}
+
+h3{
+    color: white;
+   font-family: "webdings", serif;
+    font-style:;
+    font-size: 80px;
+    font-weight: ; 
+    letter-spacing: 3px;
+    line-height: 1;
+    text-align: left; 
+}
+
+h4{
+    color: white;
+   font-family: "webdings", serif;
+    font-style:;
+    font-size: 80px;
+    font-weight: ; 
+    letter-spacing: 3px;
+    line-height: 1;
+    text-align: left; 
+}
 
 
 
