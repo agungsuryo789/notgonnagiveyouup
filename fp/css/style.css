@@ -105,52 +105,46 @@ body{
 
 #myFooter {
     background-color: #b59e5f;
-    color: white;
+    color: black;
+    text-align: center;
     padding-top: 30px;
+    padding-bottom: 0px;
 }
 
 #myFooter .footer-copyright {
     background-color: #b59e5f;
-    padding-top: 1px;
-    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-bottom: 1px;
     text-align: center;
-}
-
-#myFooter .row {
-    margin-bottom: 60px;
-}
-
-#myFooter .navbar-brand {
-    margin-top: 45px;
-    height: 65px;
 }
 
 #myFooter .footer-copyright p {
-    margin: 10px;
+    margin-top: 50px;
     color: #ccc;
 }
 
-#myFooter ul {
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 1.7;
-}
-
-#myFooter h5 {
-    font-size: 18px;
-    color: #756437;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-#myFooter h2 a{
-    font-size: 50px;
+#myFooter h2{
+    font-size: 70px;
     text-align: center;
-    color: #fff;
+    color: black;
+    font-family: Kaufmann BT Regular;
+}
+
+
+#myFooter .address {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#myFooter .address p{
+    font-family: roboto;
+    color: black;
+    font-size: 25px;
 }
 
 #myFooter a {
     color: white;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -162,12 +156,12 @@ body{
 
 #myFooter .social-networks {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding-top: 35px;
+    padding-bottom: 8px;
 }
 
 #myFooter .social-networks a {
-    font-size: 32px;
+    font-size: 23px;
     color: black;
     padding: 10px;
     transition: 0.2s;
@@ -177,35 +171,31 @@ body{
     text-decoration: none;
 }
 
-#myFooter .facebook:hover {
-    color: #183482;
+#myFooter .phone:hover {
+    color: #1a6b25;
 }
 
-#myFooter .google:hover {
-    color: #c93120;
+#myFooter .instagram:hover {
+    color: #a50909;
 }
 
 #myFooter .twitter:hover {
     color: #00aced;
 }
 
-#myFooter .btn {
-    color: white;
-    background-color: #756437;
-    border-radius: 20px;
-    border: none;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    line-height: 25px;
+#myFooter .button {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
+#myFooter .button a {
+    font-size: 20px;
+    padding:20px;
+    transition: 0.5s;
 }
+
+
 .containerr {
   position: relative;
   width: 50%;
