@@ -12,7 +12,149 @@
   <script src="js/jquery.waypointsjs"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
+    // transition<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/mayang.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.waypointsjs"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
     // transition
+    $(document).ready(function () {
+  
+      'use strict';
+      
+       var c, currentScrollTop = 0,
+           navbar = $('.navbarr');
+
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+         
+          currentScrollTop = a;
+         
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+      });
+    //
+    
+  </script>
+  <script type="text/javascript">
+        AOS.init();
+  </script>
+</head>
+
+<body>
+<div class="parallax"></div>
+<div class="hero"></div>
+  <div class="row">
+    <div class="col-12">
+      <h1 style="text-align: center;">ABOUT US</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2 style="text-align: center;">What We do Everyday?</h2>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-12">
+     <h3 style="text-align: center;">"PEACEFULL BAKERY"</h3>
+      <p style="text-align: center;">PEACEFULL BAKERY merupakan toko bakery yang menyajikan varian roti dengan bahan-bahan premium pilihan. Pada tiap harinya "MAMA BAKERY" menyediakan beberapa menu bakery dengan varian rasa, bahan, dan bentuk yang membuat costumer merasakan sensasi yang berbeda dari toko bakery lainnya. Varian menu spesial di "PEACEFULL BAKERY" salah satunya yaitu Fruit Pie ala Mama Bakery, Pie dengan tekstur lembut dan dengan toping buah segar yang tentunya dapat memanjakan lidah customer. Fruit Pie ala Mama Bakery ini adalah salah satu menu wajib yang setiap hari selalu tersedia di PEACEFULL BAKERY. Selain Fruit Pie ala Mama Bakery, di toko kami menyediakan roti gandum, Baguette (roti tradisional Prancis yang sangat terkenal di dunia. Roti ini memiliki kulit keras, berwarna coklat dan bagian dalamnya banyak terdapat lubang-lubang. Yang paling khas dalam roti ini adalah panjangnya yang mencapai 50 cm, tak heran jika roti ini dijuluki roti tongkat. Baguette biasanya disajikan dengan sup atau dipanggang lalu diberi aneka macam topping sesuai selera), Roti Pita (roti ini bentuknya bulat dan pipih, disebut juga roti Arab karena dikonsumsi mayoritas oleh penduduk Timur Tengah. Tekstur roti ini kenyal dan lembut. Proses pembuatannya terbuat dari adonan puff dan dipanggang dalam oven bata dengan suhu sekitar 232 derajat celcius. Roti ini biasanya disajikan dengan kombinasi  keju, meses, selai, kare, gulai atau susu manis),  Ciabatta (roti yang berasal dari Italia ini terbuat dari tepung gandum dan ragi. Roti ini berbentuk panjang bulat namun pipih, bagian kulit luar keras namun bagian dalam lembut. Pembuatan roti ini melalui proses pemanggangan dan saat akan dikonsumsi biasanya diiris tipis dengan aneka topping atau mentega saja), Breadsticks (roti renyah ini banyak di sajikan di restoran Italia sebagai snack pembuka, sehingga tamu yang datang menunggu makanan tidak bosan tapi juga tidak kekenyangan. Roti ini selain di sajikan polos, juga diberi aneka rasa seperti wijen, bawang, atau rempah dedaunan), Croissant (roti yang berasal dari Prancis. Disebut croissant karena bentuknya yang mirip bulan sabit. Roti ini dibuat dari adonan berlapis, teksturnya renyah dan empuk. Roti ini biasanya disajikan saat sarapan dengan diolesi mentega dan selai jeruk), Bagel (roti khas dari Eropa Timur  bentuknya bulat seperti donat, tapi bagian dalam lebih padat. Bagel disajikan pada saat makan pagi, dibelah, dibakar dan diolesi keju krim. Pada adonan bagel biasanya ditambahkan kismis, blueberry, bawang, atau wijen), Focaccia (banyak digunakan untuk bahan utama sandwich, tekstur adonnanya mirip dengan adonan roti pizza. Biasanya di Italia pembuatannya dengan tambahan bumbu seperti bawang, daging, sayuran, keju, garam dan minyak zaitun kemudian dipanggang dalam waktu tertentu), Crumpet (sejenis roti muffin namun teksturnya lebih lembab dan berasal dari Inggris. Crumpet sering disajikan dengan diolesi krim padat atau mentega dan dimakan pada saat minum teh. Sebelum dihidangkan, roti ini biasa dipanggang atau dibakar terlebih dahulu). PEACEFULL BAKERY menerima masukan dari customer mengenai menu-menu custom, jadi untuk customer yang ingin memesan roti sesuai dengan keinginannya, PEACEFULL BAKERY dapat melayani dengan sepenuh hati.</p>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-12">
+      <h4 style="text-align: center;">Our Team</h4>
+    </div>
+ </div>
+
+    <div class="row">
+    <div class="col-3">
+          <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+          <h6 style="text-align: center;">Agung Suryo Sundoro</h6>
+           <p style="text-align: center;">16.11.0493</p>
+           <p style="text-align: center;">OWNER PEACEFULL BAKERY</p>
+           <p><i class="fab fa-whatsapp-square" style="size : 25px"; >081345678902</i><p>
+           <p><i class="fab fa-facebook-square">agungsuryo</i></p>
+           <p><i class="fab fa-twitter-square">@agungss</i></p>
+           <p><i class="fab fa-instagram">agungsuryo</i></p>
+           <p><i class="fab fa-youtube-square">agungss</i></p>
+      </div>
+
+    <div class="col-3">
+    <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+            <h6 style="text-align: center;">Maria Yonessa Purwalasari</h6>
+             <p style="text-align: center;">16.11.0506</p>
+              <p style="text-align: center;">OWNER PEACEFULL BAKERY</p>
+              <p><i class="fab fa-whatsapp-square" style="size : 25px"; >08134564678</i><p>
+              <p><i class="fab fa-facebook-square">mariayonessa</i></p>
+              <p><i class="fab fa-twitter-square">@aness</i></p>
+              <p><i class="fab fa-instagram">mariayonessa</i></p>
+              <p><i class="fab fa-youtube-square">aness</i></p>
+    </div>
+   
+   <div class="col-3">
+   <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+           <h6 style="text-align: center;">Mayang Yudhiastari</h6>
+           <p style="text-align: center;">16.11.0523</p>
+            <p style="text-align: center;">OWNER PEACEFULL BAKERY</p>
+             <p><i class="fab fa-whatsapp-square" style="size : 25px"; >08134566666</i><p>
+              <p><i class="fab fa-facebook-square">mayangyudhiastary</i></p>
+              <p><i class="fab fa-twitter-square">@mayangg</i></p>
+              <p><i class="fab fa-instagram">mayangyudhiastary</i></p>
+              <p><i class="fab fa-youtube-square">mayangyudhiastary</i></p>
+    </div>
+
+   <div class="col-3">
+   <img src="img/img1.jpg" alt="..." class="img-thumbnail">
+           <h6 style="text-align: center;">Melati Suci</h6>
+           <p style="text-align: center;">16.11.0525</p>
+            <p style="text-align: center;">OWNER PEACEFULL BAKERY</p>
+            <p><i class="fab fa-whatsapp-square" style="size : 25px"; >081345622222</i></p>
+              <p><i class="fab fa-facebook-square">melatisuci</i></p>
+              <p><i class="fab fa-twitter-square">@memelsuci</i></p>
+              <p><i class="fab fa-instagram">melatisucii</i></p>
+              <p><i class="fab fa-youtube-square">melati</i></p>
+    </div>
+</div>
+
+    <div class="row">
+    <div class="col-12">
+      <h5 style="text-align: center;">Want to become Part of our Team</h3>
+    </div>
+ <div class="row">
+   <div class="col-sm-12">
+                    <div class="social-networks">
+                        <i class="fab fa-whatsapp-square" style="size : 25px"; >082243954360</i>
+                        <i class="fab fa-facebook-square">mamabakery</i>
+                        <i class="fab fa-twitter-square">@mamabakery</i>
+                        <i class="fab fa-instagram">mamabakery</i>
+                        <i class="fab fa-youtube-square">mamabakery</i>
+                        
+    </div>
+ </div>
+   </div>                           
+
+</div>
+</body>
+</html>
+
     $(document).ready(function () {
   
       'use strict';
