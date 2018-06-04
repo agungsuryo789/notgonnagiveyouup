@@ -1,6 +1,12 @@
-body{
-    overflow-x: hidden;
-}
+/*
+.headerimg1 { 
+    background-image: url("../img/bakery8.jpg");
+    height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 .texttitle {
     position: absolute;
     top: 50%;
@@ -10,24 +16,26 @@ body{
 }
 .texttitle h3{
     color: white;
-    font-family: "Libre Baskerville", serif;
+   font-family: "Libre Baskerville", serif;
     font-style:;
+    font-size: 80px;
     font-weight: ; 
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center;
-    font-size: 45px;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center; 
 }
-.texttitle h4{
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 30px;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center
+.textscroll {
+    padding-top: 275px;
+    padding-left: 540px;
+}
+.textscroll h5{
+    color: darkorange;
+    font-family:  'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+
+}
+.textscroll i{
+    padding-left: 140px;
 }
 .navbarr{
     background-color: rgba(0,0,0,0);
@@ -36,9 +44,6 @@ body{
     width: 100%;
     z-index: 9998;
     transition: .5s;
-}
-.navbarr .col12{
-    color: white;
 }
 .navbarr.scrollUp {
   transform: translateY(-80px);
@@ -61,32 +66,10 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
-.navbarr .mm {
-    float: right;
-    padding-top: 20px;
-}
-.navbarr .mm h2{
-    font-family: "Libre Baskerville", serif;
-    font-size: 20px;
-}
 .navbarr li a:hover {
     font-size: 25px;
     transition: .2s , transform .5s;
     transform: scale(1,1);
-}
-.content2 .ct2 h3{
-    padding-top: 25px;
-    text-align: center;
-    font-size: 40px;     
-}
-.content2 .ct2 img{
-    margin-top: -20px;
-    margin-left: 155px;
-    width: 300px;
-}
-.content2 p {
-    text-align: center; 
-    font-size:  15px;
 }
 .slide{
     max-width: 100%; 
@@ -103,13 +86,24 @@ body{
 }
 
 
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+}
+
+
+#myFooter {
     background-color: #b59e5f;
     color: black;
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
 }
 
 #myFooter .footer-copyright {
@@ -120,27 +114,27 @@ body{
 }
 
 #myFooter .footer-copyright p {
-    margin-top: 5px;
+    margin-top: 50px;
     color: #ccc;
 }
 
 #myFooter h2{
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
     color: black;
-    font-family: 'Pacifico', cursive;
+    font-family: Kaufmann BT Regular;
 }
 
 
 #myFooter .address {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
 #myFooter .address p{
     font-family: roboto;
     color: black;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 #myFooter a {
@@ -157,10 +151,12 @@ body{
 
 #myFooter .social-networks {
     text-align: center;
+    padding-top: 35px;
+    padding-bottom: 8px;
 }
 
 #myFooter .social-networks a {
-    font-size: 15px;
+    font-size: 23px;
     color: black;
     padding: 10px;
     transition: 0.2s;
@@ -189,98 +185,7 @@ body{
 }
 
 #myFooter .button a {
-    font-size: 18px;
+    font-size: 20px;
     padding:20px;
     transition: 0.5s;
-}
-
-.content1 img{
-    position: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: 250px;
-}
-.content3 h4{
-    margin-top: 75px;
-    margin-left: 280px;
-    margin-right: 90px;   
-}
-.content3 p{
-    text-align: center
-   margin-top: 20px;
-    margin-left: 140px;
-    margin-right: 30px;    
-}
-.btn-info{
-     margin-top: 20px;
-      margin-bottom:10px;
-    margin-right: 20px;
-    margin-left: 100px;
-}
-/* Clearfix (clear floats) */
-.menu2::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.menu{
-    height: 180px;
-    background-color: #c69a5f;
-}
-.menu h3{
-    text-align: center;
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 50px;
-    letter-spacing: -1px;
-    line-height: 1;
-    padding-top: 60px;
-
-}
-.menu img{
-    padding-left: 400px;
-}
-.content3 h3{
-    text-align: center;
-}
-.content3 p{
-    text-align: center;
-}
-.buttonmenu{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-left: 160px;
-}
-.ct2 img{
-    width: 330px;
-}
-.cmenulist .col-4 + .cmenulist .col-8{
-    height: 550px;
-}
-.cmenulist .c2 img{
-    width: 800px;
-    height: 500px; 
-    padding-top: 65px;
-    padding-left: 100px;
-}
-
-.cmenulist .c1{
-    background-color: white;
-}
-.cmenulist .c1 p{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 35px;
-}
-.cmenulist .c1 .text1{
-    padding-top: 50px;
-    font-size: 40px;
 }

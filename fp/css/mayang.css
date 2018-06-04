@@ -1,8 +1,7 @@
 
 .parallax { 
     /* The image used */
-    background-image: url("../img/cafe.jpg");
-     background-color: black;
+    background-image: url("../img/img1.jpg");
 
     /* Set a specific height */
     height: 600px; 
@@ -12,94 +11,31 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
 }
-h1{
+.title1 h1{
     text-align: center;
-     background-color: #deb887;
 }
+.content1{
+    background-color: white;
+}
+.content2{
+    background-color: white;
+}
+.content3{
+    background-color: white;
+}
+.content4{
+    background-color: white;
+}
+.content5{
+    background-color: white;
+}
+.content6{
+    background-color: white;
+)
 
-h2{
-    color: white;
-   font-family: "Calibri", serif;
-    font-style:;
-    font-size: 80px;
-    font-weight: ; 
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center; 
-}
 
-h3{
-    color: white;
-   font-family: "webdings", serif;
-    font-style:;
-    font-size: 80px;
-    font-weight: ; 
-    letter-spacing: 3px;
-    line-height: 1;
-    text-align: left; 
-}
 
-h4{
-    color: white;
-   font-family: "webdings", serif;
-    font-style:;
-    font-size: 80px;
-    font-weight: ; 
-    letter-spacing: 3px;
-    line-height: 1;
-    text-align: left; 
-}
-
-h5{
-    color: white;
-   font-family: "webdings", serif;
-    font-style:;
-    font-size: 80px;
-    font-weight: ; 
-    letter-spacing: 3px;
-    line-height: 1;
-    text-align: left; 
-}
-
-h6{
-    color: white;
-   font-family: "webdings", serif;
-    font-style:;
-    font-size: 80px;
-    font-weight: ; 
-    letter-spacing: 3px;
-    line-height: 1;
-    text-align: left; 
-}
-
-.navbarr.scrollUp {
-  transform: translateY(-80px);
-}
-.navbarr ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-} 
-.navbarr li {
-    float: left;
-}
-
-.navbarr li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.navbarr li a:hover {
-    font-size: 25px;
-    transition: .2s , transform .5s;
-    transform: scale(1,1);
-}
 
 
 
