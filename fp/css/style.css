@@ -16,7 +16,7 @@ body{
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
-    font-size: 60px;
+    font-size: 45px;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center; 
@@ -61,10 +61,13 @@ body{
     padding: 14px 16px;
     text-decoration: none;
 }
-.navbarr .mm{
-    font-family: "Libre Baskerville", serif;
+.navbarr .mm {
     float: right;
-    padding-top: 5px;
+    padding-top: 20px;
+}
+.navbarr .mm h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
 }
 .navbarr li a:hover {
     font-size: 25px;
@@ -98,6 +101,7 @@ body{
 #slider.fadeOut {
     opacity:0.4;
 }
+
 
 #myFooter{
    flex: 0 0 auto;
@@ -220,7 +224,7 @@ body{
     display: table;
 }
 .menu{
-    height: 230px;
+    height: 180px;
     background-color: #c69a5f;
 }
 .menu h3{
@@ -230,7 +234,7 @@ body{
     font-size: 50px;
     letter-spacing: -1px;
     line-height: 1;
-    padding-top: 30px;
+    padding-top: 60px;
 
 }
 .menu img{
@@ -253,18 +257,21 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-left: 270px;
+    margin-left: 160px;
 }
 .ct2 img{
     width: 330px;
 }
-.cmenulist .col-6{
+.cmenulist .col-4 + .cmenulist .col-8{
     height: 550px;
-    background-color: red;
 }
-.cmenulist .col-6 .col-4{
-    height: 50px;
+.cmenulist .c2 img{
+    width: 800px;
+    height: 500px; 
+    padding-top: 65px;
+    padding-left: 100px;
 }
+
 .cmenulist .c1{
     background-color: white;
 }
@@ -276,7 +283,4 @@ body{
 .cmenulist .c1 .text1{
     padding-top: 50px;
     font-size: 40px;
-}
-.cmenulist .c2 .col-4{
-    height: 250px;
 }
