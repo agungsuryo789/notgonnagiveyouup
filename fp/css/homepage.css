@@ -74,7 +74,7 @@ body{
     transition: .2s , transform .5s;
     transform: scale(1,1);
 }
-.contentparent .col-6{
+.contentparent .col-7 + .contentparent .col-5{
     height: 650px;
 }
 .content2{
