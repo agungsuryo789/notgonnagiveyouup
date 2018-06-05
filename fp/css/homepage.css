@@ -6,28 +6,37 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    width: 600px;
+    height: 200px;
+    background-color: #e3e7ed;
+    opacity: 0.8;
 }
 .texttitle h3{
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-style:;
-    font-weight: ; 
+    color: black;
+    opacity: 0.7;
+    font-family: "Libre Baskerville", serif; 
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center; 
+    padding-top: 20px;
+    font-weight: bold;
 }
 .texttitle h4{
-    color: white;
+    color: black;
+    opacity: 0.7;
     font-family: "Libre Baskerville", serif;
     font-size: 30px;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center
+}
+.texttitle .btn{
+    margin-top: 10px;
+    margin-left: 250px;
 }
 .navbarr{
     background-color: rgba(0,0,0,0);
@@ -103,16 +112,16 @@ body{
 
 
 #myFooter{
-   flex: 0 0 auto;
+    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
-    background-color: #b59e5f;
+    background-color: #d8d8d8;
     color: black;
     text-align: center;
     padding-bottom: 0px;
 }
 
 #myFooter .footer-copyright {
-    background-color: #b59e5f;
+    background-color: #d8d8d8;
     padding-top: 3px;
     padding-bottom: 1px;
     text-align: center;
@@ -213,17 +222,32 @@ body{
 }
 .menu{
     height: 180px;
-    background-color: #c69a5f;
+    
 }
 .menu h3{
     text-align: center;
-    color: white;
-    font-family: "Libre Baskerville", serif;
-    font-size: 50px;
-    letter-spacing: -1px;
+    color: black;
+    font-family: "Times New Roman", serif;
+    font-size: 35px;
+    letter-spacing: 2px;
     line-height: 1;
     padding-top: 60px;
-
+    font-weight: bold;
+}
+.menu p {
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman", serif;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.menu h4{
+    text-align: center;
+    color: black;
+    font-family: "Verdana", Sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 1;
 }
 .menu img{
     padding-left: 400px;
