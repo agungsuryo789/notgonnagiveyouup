@@ -14,6 +14,7 @@
   <script src="js/jquery.waypointsjs"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/pikaday.css">
 </head>
 
 <body>
@@ -57,19 +58,23 @@
 <!--  -->
 
 <!-- Contentt -->
-  <div class="row contentparent">
-      <div class="col-7">
-        <img src="img/conceptmenu.jpg" style="width: 100%; height: 100%;" data-aos="zoom-out" data-aos-duration="2000">
-      </div>
-      <div class="col-5 content2" data-aos="zoom-out" data-aos-duration="2000">
-        <h3>The Concept</h3>
-        <img src="img/line3.png">
-        <p>Datanglah setiap hari!</p><br>
-        <p>MAMA Bakery kami adalah gerai toko roti yang di peruntukan dengan menyesuaikan gaya hidup anak muda zaman sekarang.</p><br>
-        <p>Dengan bahan-bahan terpilih, aman dari produsen yang terpercaya,</p><br>
-        <p>Tanpa menggunakan zat aditif dan pengawet,</p><br>
-        <p>Koki bakery / chef akan memanggang / memasak dengan sepenuh hati, mari kunjungi Kami maka kami akan melayani anda dengan sepenuh hati.</p>                 
-      </div>
+  <div class="col-sm-12 concept" data-aos="zoom-out" data-aos-duration="1500">
+          <h3>The Concept</h3>
+          <p>__________</p>
+  </div>
+  <div class="container">
+    <div class="row contentparent">
+        <div class="col-7">
+          <img src="img/conceptmenu.jpg" style="width: 100%; height: 100%;" data-aos="zoom-out" data-aos-duration="2000">
+        </div>
+        <div class="col-5 content2" data-aos="zoom-out" data-aos-duration="2000">
+          <p>Datanglah setiap hari!</p><br>
+          <p>MAMA Bakery kami adalah gerai toko roti yang di peruntukan dengan menyesuaikan gaya hidup anak muda zaman sekarang.</p><br>
+          <p>Dengan bahan-bahan terpilih, aman dari produsen yang terpercaya,</p><br>
+          <p>Tanpa menggunakan zat aditif dan pengawet,</p><br>
+          <p>Koki bakery / chef akan memanggang / memasak dengan sepenuh hati, mari kunjungi Kami maka kami akan melayani anda dengan sepenuh hati.</p>                 
+        </div>
+    </div>
   </div>
 <!--  -->
 
@@ -88,7 +93,7 @@
         <p class="text3">Discover all our perfect bread crafted with love</p>
       </div>
       <div class="col-8 c2">
-          <img src="img/menu6.jpg">
+          <img src="img/menu10.jpeg">
       </div>
     </div>
     <!-- <div class="container">
@@ -108,6 +113,34 @@
     </div>
     </div> -->
 <!--  --> 
+
+<!-- Reservations -->
+  <div class="col-sm-12 Reservations" data-aos="zoom-out" data-aos-duration="1500">
+          <h3>Reservations</h3>
+          <p>__________</p>
+  </div>
+  <div class="row Reservations2">
+        <div class="col-12">
+          <img src="img/reservation.jpg" data-aos="zoom-out" data-aos-duration="2000">
+          <input type="text" id="datepicker">
+          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Book now!</button>
+          <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog"> 
+                <!-- Modal content-->
+                <div class="modal-content">                
+                  <div class="modal-body" style="text-align: center;">
+                    <i class="fas fa-phone"></i>
+                    <p class="p1">We're currently not accepting reservations online.</p>
+                    <p class="p2">Please call us to complete your reservation:</p>
+                    <p class="p3">someemail@someemail.com</p>
+                  </div>
+                </div>             
+              </div>
+            </div>
+        </div>
+  </div>
+<!--  -->
 <!-- google map -->
   <div id="map" style="width:100%;height:450px;background:white;margin-top: 100px" data-aos="zoom-out" data-aos-duration="1500"></div>
 <!--  -->
@@ -193,10 +226,199 @@
     var mapOptions = {
         center: new google.maps.LatLng(51.5, -0.12),
         zoom: 10,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
-    }
+        styles: [
+            {
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#212121"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.icon",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#212121"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.country",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#9e9e9e"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.land_parcel",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.locality",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#bdbdbd"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#181818"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1b1b1b"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry.fill",
+              "stylers": [
+                {
+                  "color": "#2c2c2c"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#8a8a8a"
+                }
+              ]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#373737"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#3c3c3c"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway.controlled_access",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#4e4e4e"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#000000"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#3d3d3d"
+                }
+              ]
+            }
+          ]
+              }
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     }
+  </script>
+  <script src="js/pikaday.js"></script>
+  <script>
+      var picker = new Pikaday({ field: document.getElementById('datepicker') });
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYTyY2QP4RTUvQpOkBso9Qs8wX3d1Swkg&callback=myMap" type="text/javascript"></script>
 <!--scrip-->

@@ -1,52 +1,76 @@
-
-.parallax { 
-    /* The image used */
-    background-image: url("../img/img1.jpg");
-
-    /* Set a specific height */
-    height: 600px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body{
+    background-color: #e3bbe8;
 }
-.title1 h1{
+.welcome{
     text-align: center;
 }
-.content1{
-    background-color: white;
+.welcome h3{
+    font-family: "Verdana", Sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
 }
-.content2{
-    background-color: white;
+.par1{
+    background-image: url(../img/toko1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
 }
-.content3{
-    background-color: white;
+.par2{
+    background-image: url(../img/menu9.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
 }
-.content4{
-    background-color: white;
+.toko{
+
+    height: 600px;
 }
-.content5{
-    background-color: white;
+.toko img{
+    height: 100%;
+    width: 1000px;
+    margin-left: 200px;
 }
-.content6{
-    background-color: white;
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.us{
+    text-align: center;
+}
+.us1{
+    text-align: center;
+}
+.us1 p{
+    font-family: "Verdana", Sans-serif;
+    letter-spacing: 2px;
+}
+.us2{
+    text-align: center;
+}
+.profile{
+    padding-top: 40px;
+}
+.agung img{
+    margin-left: 50px;
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+}
+.melati img{
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+}
+.mayang img{
+    margin-left: 50px;
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+}
+.anes img{
+    width: 200px;
+    height: 100%;
+    border-radius: 50%;
+}
+.melati p{
+    margin-left: 400px;
+}
+.anes p{
+    margin-left: 400px;
+}
