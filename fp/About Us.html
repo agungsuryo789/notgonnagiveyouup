@@ -20,6 +20,39 @@
 
 <body>
 
+<!-- navbar -->
+  <div class="navbarr" id="myHeader">
+  <div class="row">
+    <div class="col-12 col12">
+      <ul>
+        <li class="home">
+          <a href="#">Home</a>
+        </li>
+        <li class="menu">
+          <a href="#">Menu</a>
+        </li>
+        <li class="contact">
+          <a href="#">Contact</a>
+        </li>
+        <li class="about">
+          <a href="#">About Us</a>
+        </li>
+        <li class="mm">
+          <div class="logomama">
+            <img src="img/logomama.png" style="width: 100px; height: 100px;">
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  </div>
+
+<!--  -->
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+
 <div class="container-fluid">
 <div class="row">
   <div class="col-12 welcome">
@@ -135,6 +168,33 @@
 </div>
 <script type="text/javascript">
         AOS.init();
+</script>
+
+<script>
+    // transition
+    $(document).ready(function () {
+  
+      'use strict';
+      
+       var c, currentScrollTop = 0,
+           navbar = $('.navbarr');
+
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+         
+          currentScrollTop = a;
+         
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+      });
+    //
+    
 </script>
 </body>
 </html>
