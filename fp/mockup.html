@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/mockup.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Header image -->
+<div class="slide ">
+  <img id="slider" src="img/bakery8.jpg">
+</div>
+<div class="texttitle">
+    <h3>Ttitle's Here </h3>
+    <a href="#" class="btn btn-info" role="button">Link Button</a>
+</div>
+<!--  -->
+
+<!-- navbar -->
+  <div class="navbarr" id="myHeader">
+  <div class="row">
+    <div class="col-12 col12">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Menu</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+<!--  -->
+
+<!-- Contentt -->
+  <div class="row contentparent">
+    <div class="col-3 content2" data-aos="zoom-in" data-aos-duration="2000">
+      <h3>The Concept</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+      <div class="content1">
+      <img src="img/bakery5.jpg" width="400" height="250" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+  </div>
+<!--  -->
+    
+    <!-- Contentt2-->
+  <div class="row contentparent">
+    <div class="col-3 content3" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+      <div class="content5">
+      <img src="img/bakery5.jpg" width="500" height="350" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+       <div class="content4">
+      <img src="img/bakery5.jpg" width="400"  height="250" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+  </div>
+<!--  -->
+    
+<!-- Contentt3-->
+  <div class="row contentparent">
+      <div class="content6">
+      <img src="img/bakery5.jpg" width="400" height="250" data-aos="zoom-in" data-aos-duration="2000">
+    </div>
+      <div class="col-3 content7" data-aos="zoom-in" data-aos-duration="2000">
+      <h3>The Concept</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+<!--  -->    
+
+
+<!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.waypointsjs"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    // transition
+    $(document).ready(function () {
+  
+      'use strict';
+      
+       var c, currentScrollTop = 0,
+           navbar = $('.navbarr');
+
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+         
+          currentScrollTop = a;
+         
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+      });
+    //
+    
+  </script>
+  <script type="text/javascript">
+        AOS.init();
+  </script>
+  <script>
+    var imgArray = [
+    'img/bakery8.jpg',
+    'img/bakery2.jpg',
+    'img/bakery7.jpg',
+    'img/bakery6.jpg'],
+    curIndex = 0;
+    imgDuration = 5000;
+
+    function slideShow() {
+        document.getElementById('slider').className += "fadeOut";
+        setTimeout(function() {
+            document.getElementById('slider').src = imgArray[curIndex];
+            document.getElementById('slider').className = "";
+        },1200);
+        curIndex++;
+        if (curIndex == imgArray.length) { curIndex = 0; }
+        setTimeout(slideShow, imgDuration);
+    }
+    slideShow();
+  </script>
+<!--  -->
+</body>
+</html>
