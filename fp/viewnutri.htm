@@ -1,0 +1,30 @@
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+
+<div class="tablesjs" ng-app="myApp" ng-controller="nutrictrl">
+    <div class="row">
+      <div class="col-12" style="text-align: center;">
+        <h3>Nutrition Info</h3>
+      </div>
+    </div>
+    <table>
+    <tr>
+      <td>Name</td>
+      <td>Description</td>
+      <td>Type</td>
+      <td>Ingredients</td>
+      <td>Calories</td>
+      <td>Protein</td>
+  
+    </tr>
+      <tr ng-repeat="x in info">
+        <td>{{ x.Nama}}</td>
+        <td>{{ x.Description}}</td>
+        <td>{{ x.Type}}</td>
+        <td>{{ x.ingredients}}</td>
+        <td>{{ x.Calories}}</td>
+        <td>{{ x.Protein}}</td>
+        
+      </tr>
+    </table>
+  </div>

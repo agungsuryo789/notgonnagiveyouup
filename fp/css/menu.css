@@ -1,0 +1,208 @@
+body{
+    overflow-x: hidden;
+}
+.logomama{
+    margin-top: -160px;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-radius: 30%;
+}
+.navbarr{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+    transition: .5s;
+    height: 100px;
+    opacity: 0.8;
+}
+.navbarr .col12{
+    color: black;
+}
+
+.navbarr.scrollUp {
+  transform: translateY(-100px);
+}
+.navbarr ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+} 
+.navbarr li {
+    float: left;
+}
+
+.navbarr li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 135px;
+    text-decoration: none;
+    font-family: "Courier", monospace;
+    margin-left: 8px;
+}
+.navbarr .mm {
+    float: right;
+    padding-right: 630px;
+}
+.navbarr .mm h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
+}
+.navbarr li a:hover {
+    /*font-size: 25px;
+    transition: .2s , transform .5s;
+    transform: scale(1,1);*/
+    color: red;
+}
+
+#myFooter{
+    flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+    background-color: #d8d8d8;
+    color: black;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #d8d8d8;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+#myFooter h2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-family: Kaufmann BT Regular;
+}
+
+
+#myFooter .address {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#myFooter .address p{
+    font-family: roboto;
+    color: black;
+    font-size: 15px;
+}
+
+#myFooter a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+}
+
+#myFooter .social-networks a {
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .phone:hover {
+    color: #1a6b25;
+}
+
+#myFooter .instagram:hover {
+    color: #a50909;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .button {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#myFooter .button a {
+    font-size: 18px;
+    padding:20px;
+    transition: 0.5s;
+}
+
+
+/* Clearfix (clear floats) */
+.menu2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu{
+    height: 180px;
+    
+}
+.tabmenu .col-6 a{
+    color: black;
+    font-size: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.tab1 .col-6 h4{
+    color:#eab759;
+    font-family: "Courier", monospace;
+    font-size: 25px;
+}
+.tab2 .col-6 h4{
+    color:#eab759;
+    font-family: "Courier", monospace;
+    font-size: 25px;
+}
+.tab3 .col-6 h4{
+    color:#eab759;
+    font-family: "Courier", monospace;
+    font-size: 25px;
+}
+.tab1 .col-6 h5{
+    color:black;
+    font-family: "Verdana", serif;
+    font-size: 15px;
+}
+.tab2 .col-6 h5{
+    color:black;
+    font-family: "Verdana", serif;
+    font-size: 15px;
+}
+.tab3 .col-6 h5{
+    color:black;
+    font-family: "Verdana", serif;
+    font-size: 15px;
+}

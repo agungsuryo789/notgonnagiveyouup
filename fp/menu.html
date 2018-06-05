@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mama Bakery n Cafe</title>
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.waypointsjs"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/pikaday.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script type="text/javascript"> 
+    var app = angular.module("MyApp", ["ngRoute"]);
+    app.config(function($routeProvider){
+      $routeProvider.when("/", {templateUrl : "viewmenu.htm"})
+    .when("/main", {templateUrl : "viewmenu.htm",controller:'viewmenuctrl'})
+    .when("/viewnutri", {templateUrl : "viewnutri.htm",controller:'nutrictrl'});
+    });
+    app.controller('nutrictrl',function($scope,$http){
+      var url ='https://api.myjson.com/bins/xokbe';
+      $http.get(url).then(function(response){
+        $scope.info = response.data;
+      })
+      $scope.title="Product Description";});
+    app.controller('viewmenuctrl',function($scope,$http){
+      var url ='https://api.myjson.com/bins/xokbe';
+      $http.get(url).then(function(response){
+        $scope.get = response.data;
+      })
+      $scope.title="Product Description";});
+  </script>
+  
+</head>
+
+<body>
+<!-- navbar -->
+  <div class="navbarr" id="myHeader">
+  <div class="row">
+    <div class="col-12 col12">
+      <ul>
+        <li class="home">
+          <a href="homepage.html">Home</a>
+        </li>
+        <li class="menu">
+          <a href="menu.html">Menu</a>
+        </li>
+        <li class="contact">
+          <a href="contact.html">Contact</a>
+        </li>
+        <li class="about">
+          <a href="about.html">About Us</a>
+        </li>
+        <li class="mm">
+          <div class="logomama">
+            <img src="img/logomama.png" style="width: 100px; height: 100px;">
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  </div>
+
+<!--  -->
+
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+
+<!-- content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="text-align: center;">
+        <h3>Menu List</h3>
+        <h4>__________</h4>
+      </div>
+    </div>
+  </div>
+
+<div class="container" ng-app = "MyApp">
+    <div class="row tabmenu">
+      <div class="col-6" style="text-align: center;">
+        <a href="#!main">--> View menu</a>
+      </div>
+      <div class="col-6" style="text-align: center;">
+        <a href="#!viewnutri">--> View Nutrition Info</a>
+      </div>
+    </div>
+
+<!--  -->
+
+
+<ng-view></ng-view>
+</div>
+
+<div class="container" style="height: 50px;"></div>
+<div class="container" style="height: 50px;"></div>
+
+<!-- footer-->
+  <footer id="myFooter" data-aos="zoom-out" data-aos-duration="1500">
+          <div class="container">
+                      <h2 class="logo"><p>Mama Bakery and Cafe</p></h2>
+                  </div>
+
+                      <div class="address"><p>Jl. Ring Road Utara, Condong Catur, Depok, Seleman, Yogyakarta. </p>
+                      </div>
+
+                      <div class="social-networks">
+                          <a href="#" class="phone"><i class="fa fa-phone" >+62-822-113-8873</i></a>
+                          <a href="#" class="instagram"><i class="fa fa-instagram">@mama_bakery</i></a>
+                          <a href="#" class="twitter"><i class="fa fa-twitter">@mama_Bakery</i></a>
+                      </div>
+
+                      <div class="button">
+                        <a href="#" class="btn-contact">Contact</a>
+                        <a href="#" class="btn-reserva">Reservations Agreement</a>
+                        <a href="#" class="btn-menu">Menus</a>
+                    </div>
+          </div>
+          <div class="footer-copyright">
+              <p>©2018 copyright Mama bakery</p>
+          </div>
+  </footer>
+<!--  -->
+<!-- script -->
+  <script>
+    // transition
+    $(document).ready(function () {
+  
+      'use strict';
+      
+       var c, currentScrollTop = 0,
+           navbar = $('.navbarr');
+
+       $(window).scroll(function () {
+          var a = $(window).scrollTop();
+          var b = navbar.height();
+         
+          currentScrollTop = a;
+         
+          if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+          } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+          }
+          c = currentScrollTop;
+      });
+      });
+    //
+    
+  </script>
+  <script type="text/javascript">
+        AOS.init();
+  </script>
+  
+<!--scrip-->
+
+</body>
+</html>

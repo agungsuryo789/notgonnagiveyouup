@@ -132,3 +132,13 @@ body{
     transform: scale(1,1);*/
     color: red;
 }
+/* Clearfix (clear floats) */
+.menu2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu{
+    height: 180px;
+    
+}

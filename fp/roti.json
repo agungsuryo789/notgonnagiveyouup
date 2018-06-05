@@ -1,0 +1,56 @@
+﻿[
+	{
+		"Nama": "Anadama bread",
+		"Description": "A sweet",
+		"Type": " cornmeal and molasses based bread.",
+		"ingredients": "Yeast bread",
+		"Calories": "Wheat Flour ",
+		"Protein": "96",
+		"Cost": " 5.5 "
+	},
+	{
+		"Nama": "Anpan",
+		"Description": "Filled",
+		"Type": " usually with red bean paste",
+		"ingredients": " or with white beans",
+		"Calories": " sesame",
+		"Protein": " or chestnut.",
+		"Cost": "Sweet bun"
+	},
+	{
+		"Nama": "Rye Bread",
+		"Description": "It is dark in color and has a strong flavor. ",
+		"Type": "Wholemeal bread",
+		"ingredients": "Normally flours ",
+		"Calories": "95",
+		"Protein": "5.5",
+		"Cost": "12$"
+	},
+	{
+		"Nama": "Multi-Grain Bread",
+		"Description": "Its normally flours like whole-wheat",
+		"Type": " are combined to make the bread. ",
+		"ingredients": "France",
+		"Calories": "wheat germ",
+		"Protein": "70",
+		"Cost": "6.8"
+	},
+	{
+		"Nama": "Bagel",
+		"Description": "Usually topped with sesame or poppy seeds baked into the surface",
+		"Type": "Yeast bread",
+		"ingredients": "self-rising flour",
+		"Calories": "45",
+		"Protein": "7.5",
+		"Cost": "8$"
+	},
+	{
+		"Nama": "Dorayaki",
+		"Description": "Japanese confection",
+		"Type": " which consists of two small pancake like patties made from castella",
+		"ingredients": "Pancake",
+		"Calories": "plain flour",
+		"Protein": "85",
+		"Cost": "4.5"
+	}
+]
