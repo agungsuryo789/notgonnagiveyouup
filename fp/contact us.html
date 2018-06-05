@@ -1,78 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <head>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+    <script src="js/countdowntime.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+</head>
+<body>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/form-elements.css">
-        <link rel="stylesheet" href="css/new.css">
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    Contact
+                </span>
 
-    </head>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type your name">
+                    <input id="your-name" class="input100" type="text" name="your-name" placeholder="your name">
+                    <span class="focus-input100"></span>
+                </div>
 
-    <body>
-        <!-- Top content -->
-        <div class="top-content">
-            
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>CONTACT</strong></h1>
-                        <div class="form-top-divider"></div>
-                            <div class="description">
-                                <p>
-                                    We like to create things with fun, open-minded people. Feel free to say hello!
-                                </p>
-                            </div>
-                        </div>
+                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Email">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                    <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        Send Your Message
+                    </button>
+                </div>
+            </form>
+
+            <div class="contact100-more flex-col-c-m" style="background-image: url('img/menu5.jpg');">
+                <div class="flex-w size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-map-marker"></span>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 phone">
-                        </div>
+                    <div class="flex-col size2">
+                        <span class="txt2">
+                            Jl. Ringroad Utara, Depok, Seleman, Yogyakarta
+                        </span>
+                    </div>
+                </div>
 
-                        <div class="col-sm-5 form-box">
-                            <div class="form-bottom">
-                                <form role="form" action="" method="post" class="registration-form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-first-name">First name</label>
-                                        <input type="text" name="form-first-name" placeholder="First Name" class="form-first-name form-control" id="form-first-name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-email">Email</label>
-                                        <input type="text" name="form-email" placeholder="Email" class="form-email form-control" id="form-email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-last-name">Message</label>
-                                        <input type="text" name="form-last-name" placeholder="Message" class="form-Message form-control" id="form-Massage">
-                                    </div>
-                                    <button type="submit" class="btn">Send Your Message</button>
-                                </form>
-                            </div>
-                        </div>
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt3">
+                            082245661775
+                        </span>
+                    </div>
+                </div>
+
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-envelope"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt3">
+                            mamabakery@gmail.com
+                        </span>
                     </div>
                 </div>
             </div>
-            
         </div>
+    </div>
 
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
 
-        <!-- Javascript -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.backstretch.min.js"></script>
-        <script src="js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    </body>
-
+      gtag('config', 'UA-23581568-13');
+    </script>
+</body>
 </html>

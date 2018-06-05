@@ -131,13 +131,6 @@ button:hover {
 	cursor: pointer;
 }
 
-iframe {
-	border: none !important;
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ utility ]*/
-
 /*==================================================================
 [ Text ]*/
 .txt1 {
@@ -185,10 +178,10 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  padding: 15px;
-  background: #ffffff;
+  padding: 0px;
+  background: #0000;
   
 }
 
@@ -247,7 +240,6 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 33px;
 }
 
 
